@@ -46,7 +46,7 @@ y_current = 0.0
 
 INIT_VELOCITY = 15 * 0.44704
 G = -9.81
-ACCEL_CONST = -G * 2
+ACCEL_CONST = -G * 3.5
 x_array = np.array([0])
 y_array = np.array([0])
 
