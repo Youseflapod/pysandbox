@@ -46,11 +46,11 @@ y_current = 0.0
 
 INIT_VELOCITY = 15 * 0.44704
 G = -9.81
-ACCEL_CONST = -G * 2
+ACCEL_CONST = -G * 3.5
 x_array = np.array([0])
 y_array = np.array([0])
 
-while theta_current <= m.pi * 1.499:
+while theta_current <= m.pi * (1.499 + 2):
     radius = radius_for_height(y_current, INIT_VELOCITY, G, ACCEL_CONST)
     arc = draw_arc(x_current, y_current, radius, theta_current, DT_THETA, THETA_STEP)
     # ax.plot(arc[0], arc[1])
